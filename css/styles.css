@@ -193,6 +193,7 @@ button { font: inherit; color: inherit; }
   background: var(--raised); border-radius: var(--radius-sm);
   padding: 1rem; display: grid; place-items: center; margin-bottom: 1.5rem;
 }
+.identity__name { font-size: var(--fs-lg); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; color: var(--text); margin: 0 0 .3rem; }
 .identity__logo img { width: 128px; border-radius: 6px; }
 .identity h1 { font-size: var(--fs-xl); line-height: 1.14; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
 .identity__lead { color: var(--text); }
