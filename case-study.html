@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OPAL case study: automating workflows from production floor to analytics — Daniel Peleg</title>
-  <meta name="description" content="UX case study: how OPAL replaced a spreadsheet shared by three teams with one offline-first platform for planning, on-site data collection and post-processing — ~25% less time on site, ~60% less post-processing.">
+  <meta name="description"
+    content="UX case study: how OPAL replaced a spreadsheet shared by three teams with one offline-first platform for planning, on-site data collection and post-processing — ~25% less time on site, ~60% less post-processing.">
   <meta name="author" content="Daniel Peleg">
   <meta name="theme-color" content="#070A0A">
   <link rel="canonical" href="https://dpeleg.github.io/case-study.html">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="Automating workflows, from production floor to analytics — OPAL case study">
-  <meta property="og:description" content="Three workflows, one spreadsheet, and a team collecting data in gloves with no reliable internet.">
+  <meta property="og:description"
+    content="Three workflows, one spreadsheet, and a team collecting data in gloves with no reliable internet.">
   <meta property="og:image" content="https://dpeleg.github.io/assets/img/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -20,7 +23,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 
   <script type="application/ld+json">
@@ -33,6 +37,7 @@
   }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -58,19 +63,33 @@
     <!-- ============ Hero ============ -->
     <section class="panel cs-hero" aria-labelledby="cs-title">
       <div>
-        <p class="label"><span class="label--amber">Case study</span><span class="sep">·</span>OPAL · P&amp;P Optica · internal tool</p>
+        <p class="label"><span class="label--amber">Case study</span><span class="sep">·</span>OPAL · P&amp;P Optica ·
+          internal tool</p>
         <h1 id="cs-title">Automating workflows, from production floor to analytics</h1>
-        <p class="cs-hero__sub">Three workflows, one spreadsheet, and a team collecting data in gloves and masks with no reliable internet. How OPAL brought planning, data collection and post-processing into one platform.</p>
+        <p class="cs-hero__sub">Three workflows, one spreadsheet, and a team collecting data in gloves and masks with no
+          reliable internet. How OPAL brought planning, data collection and post-processing into one platform.</p>
         <dl class="meta">
-          <div><dt>Role</dt><dd>Full-stack developer, UI/UX designer</dd></div>
-          <div><dt>Team</dt><dd>3 developers</dd></div>
-          <div><dt>Tools</dt><dd>Figma, Svelte PWA, Hono, PostgreSQL, AWS</dd></div>
-          <div><dt>Timeline</dt><dd>4 months</dd></div>
+          <div>
+            <dt>Role</dt>
+            <dd>Full-stack developer, UI/UX designer</dd>
+          </div>
+          <div>
+            <dt>Team</dt>
+            <dd>3 developers</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Figma, Svelte PWA, Hono, PostgreSQL, AWS</dd>
+          </div>
+          <div>
+            <dt>Timeline</dt>
+            <dd>4 months</dd>
+          </div>
         </dl>
       </div>
       <figure class="cs-hero__media">
         <img src="assets/case-study/opal-operator-run.png" width="511" height="595"
-             alt="OPAL operator run screen: run details, scan-ID stepper, five lane buttons and a Start Scan button.">
+          alt="OPAL operator run screen: run details, scan-ID stepper, five lane buttons and a Start Scan button.">
       </figure>
     </section>
 
@@ -110,11 +129,18 @@
 
         <!-- 01 -->
         <section class="panel section" id="overview" aria-labelledby="h-overview">
-          <div class="section__head"><span class="section__num">01</span><h2 id="h-overview">Project overview</h2></div>
-          <p>Every customer project at P&amp;P Optica runs through three stages: <strong>planning</strong>, <strong>data collection</strong> and <strong>post-processing</strong>. Each stage belonged to a different person and used several different tools, with one spreadsheet connecting them.</p>
-          <p>OPAL brings all three into one internal platform built around what the Data Modelling team needs. Planning, on-site collection and post-processing now share one source of data that is easy to review, with real-time logging.</p>
+          <div class="section__head"><span class="section__num">01</span>
+            <h2 id="h-overview">Project overview</h2>
+          </div>
+          <p>Every customer project at P&amp;P Optica runs through three stages: <strong>planning</strong>, <strong>data
+              collection</strong> and <strong>post-processing</strong>. Each stage belonged to a different person and
+            used several different tools, with one spreadsheet connecting them.</p>
+          <p>OPAL brings all three into one internal platform built around what the Data Modelling team needs. Planning,
+            on-site collection and post-processing now share one source of data that is easy to review, with real-time
+            logging.</p>
           <ul class="stats">
-            <li><span class="stat__value">~25%</span><span class="stat__label">Less time at the customer site</span></li>
+            <li><span class="stat__value">~25%</span><span class="stat__label">Less time at the customer site</span>
+            </li>
             <li><span class="stat__value">~60%</span><span class="stat__label">Less post-processing time</span></li>
             <li><span class="stat__value">Full log</span><span class="stat__label">Of every on-site session</span></li>
           </ul>
@@ -122,103 +148,178 @@
 
         <!-- 02 -->
         <section class="panel section" id="research" aria-labelledby="h-research">
-          <div class="section__head"><span class="section__num">02</span><h2 id="h-research">User research &amp; discovery</h2></div>
+          <div class="section__head"><span class="section__num">02</span>
+            <h2 id="h-research">User research &amp; discovery</h2>
+          </div>
 
           <h3>How the old workflow ran</h3>
           <div class="grid-3">
-            <div class="tile"><h4>1 · Planning</h4><p>Once sales agreed a project, Data Modelling set the standard — data types, durations and repetitions. Data Services turned it into a spreadsheet.</p></div>
-            <div class="tile"><h4>2 · Data collection</h4><p>Data Services took the spreadsheet to the customer's production floor and recorded results by hand, in gloves and masks. A skipped measurement meant editing formulas on the spot.</p></div>
-            <div class="tile"><h4>3 · Post-processing</h4><p>Spreadsheet and machine files went to the cloud. One set of scripts matched rows to files; a second extracted the data for Data Modelling.</p></div>
+            <div class="tile">
+              <h4>1 · Planning</h4>
+              <p>Once sales agreed a project, Data Modelling set the standard — data types, durations and repetitions.
+                Data Services turned it into a spreadsheet.</p>
+            </div>
+            <div class="tile">
+              <h4>2 · Data collection</h4>
+              <p>Data Services took the spreadsheet to the customer's production floor and recorded results by hand, in
+                gloves and masks. A skipped measurement meant editing formulas on the spot.</p>
+            </div>
+            <div class="tile">
+              <h4>3 · Post-processing</h4>
+              <p>Spreadsheet and machine files went to the cloud. One set of scripts matched rows to files; a second
+                extracted the data for Data Modelling.</p>
+            </div>
           </div>
 
 
           <h3>How I researched it</h3>
           <ol class="steps">
-            <li><strong>Spreadsheet analysis.</strong> I took apart the spreadsheets from 3 projects: data types, formulas, terms, and how the data connected.</li>
-            <li><strong>Documentation review.</strong> I read the Data Services team's internal docs to learn their procedures, workflows and defaults.</li>
-            <li><strong>Stakeholder interviews.</strong> I interviewed 4 experienced team members from the Data Services and Data Modelling teams to validate and adjust my findings, and to understand each process as it actually happens at every stage.</li>
+            <li><strong>Spreadsheet analysis.</strong> I took apart the spreadsheets from 3 projects: data types,
+              formulas, terms, and how the data connected.</li>
+            <li><strong>Documentation review.</strong> I read the Data Services team's internal docs to learn their
+              procedures, workflows and defaults.</li>
+            <li><strong>Stakeholder interviews.</strong> I interviewed 4 experienced team members from the Data Services
+              and Data Modelling teams to validate and adjust my findings, and to understand each process as it actually
+              happens at every stage.</li>
             <li><strong>Findings fed the schema.</strong> The results became the database design (see Ideation).</li>
           </ol>
 
           <h3>What I found</h3>
           <ul>
-            <li><strong>Every project tests a core set of materials, but most add their own.</strong> The data structure has to be granular and flexible enough to fit each project's requirements and properties, while letting new projects add more options and parameters.</li>
-            <li><strong>Three types of data, collected two ways</strong> — scans (pictures) and captures (video). Keeping them separate behind the scenes makes each workflow simpler and faster.</li>
-            <li><strong>A scan can be matched by timestamp, but must be verified by scan ID.</strong> Time alone isn't enough to trust a match.</li>
-            <li><strong>Operators validate the data at the end of every day.</strong> They need to see what was collected before post-processing starts.</li>
+            <li><strong>Every project tests a core set of materials, but most add their own.</strong> The data structure
+              has to be granular and flexible enough to fit each project's requirements and properties, while letting
+              new projects add more options and parameters.</li>
+            <li><strong>Three types of data, collected two ways</strong> — scans (pictures) and captures (video).
+              Keeping them separate behind the scenes makes each workflow simpler and faster.</li>
+            <li><strong>A scan can be matched by timestamp, but must be verified by scan ID.</strong> Time alone isn't
+              enough to trust a match.</li>
+            <li><strong>Operators validate the data at the end of every day.</strong> They need to see what was
+              collected before post-processing starts.</li>
             <li><strong>Operators want the option to use a tablet.</strong> The UI can't assume a laptop.</li>
           </ul>
 
           <figure class="figure" id="artifact-personas">
             <div class="figure__head">
               <span class="artifact-label">Artifact 1 — User personas</span>
-              <a class="figure__open" href="assets/case-study/opal-personas.svg" target="_blank" rel="noopener">Open full size<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="figure__open" href="assets/case-study/opal-personas.svg" target="_blank" rel="noopener">Open
+                full size<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <div class="figure__scroll">
               <img src="assets/case-study/opal-personas.svg" width="1704" height="1057" loading="lazy"
-                   alt="Three composite personas. The planner (Data Services, office), the field operator (Data Services, customer site) and the data modeller (Data Modelling), each with context, goals, frustrations with the spreadsheet, and what OPAL has to give them.">
+                alt="Three composite personas. The planner (Data Services, office), the field operator (Data Services, customer site) and the data modeller (Data Modelling), each with context, goals, frustrations with the spreadsheet, and what OPAL has to give them.">
             </div>
-            <figcaption>Composite personas built from the spreadsheet analysis, documentation review and interviews.</figcaption>
+            <figcaption>Composite personas built from the spreadsheet analysis, documentation review and interviews.
+            </figcaption>
           </figure>
         </section>
 
         <!-- 03 -->
         <section class="panel section" id="problem" aria-labelledby="h-problem">
-          <div class="section__head"><span class="section__num">03</span><h2 id="h-problem">Problem statement</h2></div>
-          <blockquote class="quote">Three workflows depended on one spreadsheet. It was error-prone, difficult to adjust on the go, and not user-friendly on a production floor while wearing PPE.</blockquote>
+          <div class="section__head"><span class="section__num">03</span>
+            <h2 id="h-problem">Problem statement</h2>
+          </div>
+          <blockquote class="quote">Three workflows depended on one spreadsheet. It was error-prone, difficult to adjust
+            on the go, and not user-friendly on a production floor while wearing PPE.</blockquote>
           <dl class="grid-2">
-            <div class="goal"><dt>User goal</dt><dd>Record and adjust a run on the floor without the change itself becoming the source of errors — and always know the work is saved.</dd></div>
-            <div class="goal"><dt>Business goal</dt><dd>Shorter site visits, faster post-processing, and data that stays inside the organisation.</dd></div>
+            <div class="goal">
+              <dt>User goal</dt>
+              <dd>Record and adjust a run on the floor without the change itself becoming the source of errors — and
+                always know the work is saved.</dd>
+            </div>
+            <div class="goal">
+              <dt>Business goal</dt>
+              <dd>Shorter site visits, faster post-processing, and data that stays inside the organisation.</dd>
+            </div>
           </dl>
         </section>
 
         <!-- 04 -->
         <section class="panel section" id="ideation" aria-labelledby="h-ideation">
-          <div class="section__head"><span class="section__num">04</span><h2 id="h-ideation">Ideation</h2></div>
-          <p>I organised the findings around five design questions, keeping the rejected options visible next to the ones we chose.</p>
+          <div class="section__head"><span class="section__num">04</span>
+            <h2 id="h-ideation">Ideation</h2>
+          </div>
+          <p>I organised the findings around five design questions, keeping the rejected options visible next to the
+            ones we chose.</p>
 
           <div class="table-wrap">
             <table>
-              <thead><tr><th scope="col">Question</th><th scope="col">Chosen</th><th scope="col">Rejected</th></tr></thead>
+              <thead>
+                <tr>
+                  <th scope="col">Question</th>
+                  <th scope="col">Chosen</th>
+                  <th scope="col">Rejected</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td>What does a plan really contain?</td><td>A standard materials catalogue with per-project additions</td><td>—</td></tr>
-                <tr><td>How do we keep the data types apart?</td><td>A separate workflow per data type; FP runs planned by time, not count</td><td>One generic run form</td></tr>
-                <tr><td>How do we trust the data before post-processing?</td><td>Match by timestamp, verify by scan ID; end-of-day review; a log of every session</td><td>Matching by time only, or by scan ID only</td></tr>
-                <tr><td>What should it run on?</td><td>A Svelte PWA — laptop or tablet, works offline</td><td>React Native, Flutter, htmx</td></tr>
-                <tr><td>How should it behave on the floor?</td><td>A view per role, automatic replay when online, glove-sized controls</td><td>One screen with fields hidden by permission; a manual "sync now" button</td></tr>
+                <tr>
+                  <td>What does a plan really contain?</td>
+                  <td>A standard materials catalogue with per-project additions</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>How do we keep the data types apart?</td>
+                  <td>A separate workflow per data type; FP runs planned by time, not count</td>
+                  <td>One generic run form</td>
+                </tr>
+                <tr>
+                  <td>How do we trust the data before post-processing?</td>
+                  <td>Match by timestamp, verify by scan ID; end-of-day review; a log of every session</td>
+                  <td>Matching by time only, or by scan ID only</td>
+                </tr>
+                <tr>
+                  <td>What should it run on?</td>
+                  <td>A Svelte PWA — laptop or tablet, works offline</td>
+                  <td>React Native, Flutter, htmx</td>
+                </tr>
+                <tr>
+                  <td>How should it behave on the floor?</td>
+                  <td>A view per role, automatic replay when online, glove-sized controls</td>
+                  <td>One screen with fields hidden by permission; a manual "sync now" button</td>
+                </tr>
               </tbody>
             </table>
           </div>
           <h3>Why a PWA</h3>
           <ul>
-            <li><strong>No app stores.</strong> No developer accounts and no store review: an update ships instantly instead of taking up to two weeks.</li>
+            <li><strong>No app stores.</strong> No developer accounts and no store review: an update ships instantly
+              instead of taking up to two weeks.</li>
             <li><strong>A simpler development model.</strong> One web codebase for every device.</li>
-            <li><strong>Offline first.</strong> htmx relies heavily on server calls, so it’s a poor fit for an app that has to cache data and keep working offline.</li>
-            <li><strong>It fits the product.</strong> OPAL is an internal tool with no pricing model, about two-thirds of the work is desktop-oriented, and even operators don't always choose a tablet.</li>
+            <li><strong>Offline first.</strong> htmx relies heavily on server calls, so it’s a poor fit for an app that
+              has to cache data and keep working offline.</li>
+            <li><strong>It fits the product.</strong> OPAL is an internal tool with no pricing model, about two-thirds
+              of the work is desktop-oriented, and even operators don't always choose a tablet.</li>
           </ul>
 
           <figure class="figure">
             <div class="figure__head">
               <span class="label" style="margin:0">Ideation board</span>
-              <a class="figure__open" href="assets/case-study/opal-ideation.svg" target="_blank" rel="noopener">Open full size<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="figure__open" href="assets/case-study/opal-ideation.svg" target="_blank" rel="noopener">Open
+                full size<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <div class="figure__scroll">
               <img src="assets/case-study/opal-ideation.svg" width="1482" height="1360" loading="lazy"
-                   alt="Sticky-note board: research findings, ideas kept and options rejected, grouped under the five design questions.">
+                alt="Sticky-note board: research findings, ideas kept and options rejected, grouped under the five design questions.">
             </div>
           </figure>
 
           <h3>Database design</h3>
-          <p>The schema was reviewed by Data Modelling and by the Systems and Cloud teams before any UI work began. It separates a <strong>reference catalogue</strong> (customers, machines, materials, sizes, preparation methods) from the <strong>plan</strong> (projects → data collections → planned runs), the <strong>on-site record</strong> (execution logs, scans, photos, issues) and <strong>post-processing</strong> (batches, reviews, annotations). They share keys, so nothing is matched by hand afterwards, and a retried run points back to the run it replaces.</p>
-          <p>It changed as we learned: adjusting to better track operator issues in the field, offline work and idempotency, and new types of projects the team could take on with this tool.</p>
+          <p>The schema was reviewed by Data Modelling and by the Systems and Cloud teams before any UI work began. It
+            separates a <strong>reference catalogue</strong> (customers, machines, materials, sizes, preparation
+            methods) from the <strong>plan</strong> (projects → data collections → planned runs), the <strong>on-site
+              record</strong> (execution logs, scans, photos, issues) and <strong>post-processing</strong> (batches,
+            reviews, annotations). They share keys, so nothing is matched by hand afterwards, and a retried run points
+            back to the run it replaces.</p>
+          <p>It changed as we learned: adjusting to better track operator issues in the field, offline work and
+            idempotency, and new types of projects the team could take on with this tool.</p>
           <figure class="figure">
             <div class="figure__head">
               <span class="label" style="margin:0">Database schema</span>
-              <a class="figure__open" href="assets/case-study/opal-schema.svg" target="_blank" rel="noopener">Open full size<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="figure__open" href="assets/case-study/opal-schema.svg" target="_blank" rel="noopener">Open full
+                size<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <div class="figure__scroll">
               <img src="assets/case-study/opal-schema.svg" width="2194" height="1028" loading="lazy"
-                   alt="Entity diagram of the OPAL database grouped into reference catalogue, planning, data collection and post-processing.">
+                alt="Entity diagram of the OPAL database grouped into reference catalogue, planning, data collection and post-processing.">
             </div>
             <figcaption>Users, audit and API bookkeeping tables left out.</figcaption>
           </figure>
@@ -226,30 +327,64 @@
           <figure class="figure" id="artifact-flow">
             <div class="figure__head">
               <span class="artifact-label">Artifact 2 — User flow map</span>
-              <a class="figure__open" href="assets/case-study/opal-user-flow.svg" target="_blank" rel="noopener">Open full size<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="figure__open" href="assets/case-study/opal-user-flow.svg" target="_blank" rel="noopener">Open
+                full size<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
             <div class="figure__scroll">
               <img src="assets/case-study/opal-user-flow.svg" width="2178" height="1030" loading="lazy"
-                   alt="Swimlane user flow: Data Modelling sets the standard; the planner creates the project and schedules runs; the field operator loads the plan, does the safety check, runs and records offline, and reviews the day's data; OPAL queues and replays when online; post-processing matches and annotates; Data Modelling trains models per material.">
+                alt="Swimlane user flow: Data Modelling sets the standard; the planner creates the project and schedules runs; the field operator loads the plan, does the safety check, runs and records offline, and reviews the day's data; OPAL queues and replays when online; post-processing matches and annotates; Data Modelling trains models per material.">
             </div>
-            <figcaption>Machine files still reach the cloud outside OPAL, because OPAL can't connect to the customer's machine — a deliberate scope boundary.</figcaption>
+            <figcaption>Machine files still reach the cloud outside OPAL, because OPAL can't connect to the customer's
+              machine — a deliberate scope boundary.</figcaption>
           </figure>
         </section>
 
         <!-- 05 -->
         <section class="panel section" id="prototyping" aria-labelledby="h-prototyping">
-          <div class="section__head"><span class="section__num">05</span><h2 id="h-prototyping">Prototyping</h2></div>
+          <div class="section__head"><span class="section__num">05</span>
+            <h2 id="h-prototyping">Prototyping</h2>
+          </div>
           <p>The workflow and UI had to answer the conditions on the floor.</p>
           <div class="table-wrap">
             <table>
-              <thead><tr><th scope="col">Condition on the floor</th><th scope="col">What it forces</th><th scope="col">Where it shows up</th></tr></thead>
+              <thead>
+                <tr>
+                  <th scope="col">Condition on the floor</th>
+                  <th scope="col">What it forces</th>
+                  <th scope="col">Where it shows up</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td>PPE — gloves, masks</td><td>Large touch targets, few precise gestures</td><td>Operator tabs and toolbar</td></tr>
-                <tr><td>Bright light, glare</td><td>High contrast, large type</td><td>Palette and type scale</td></tr>
-                <tr><td>Limited to no internet</td><td>Work never waits on the network; save state always visible</td><td>Offline cache, queued sync</td></tr>
-                <tr><td>Plans change mid-run</td><td>Changing the plan can't be the error-prone path</td><td>Scan-ID stepper, continuity checks</td></tr>
-                <tr><td>Wrong tags corrupt models</td><td>Tagging has to be hard to get wrong</td><td>Run fields, run detail</td></tr>
-                <tr><td>Safety steps before work</td><td>A deliberate stop, not a dismissible banner</td><td>Safety modal</td></tr>
+                <tr>
+                  <td>PPE — gloves, masks</td>
+                  <td>Large touch targets, few precise gestures</td>
+                  <td>Operator tabs and toolbar</td>
+                </tr>
+                <tr>
+                  <td>Bright light, glare</td>
+                  <td>High contrast, large type</td>
+                  <td>Palette and type scale</td>
+                </tr>
+                <tr>
+                  <td>Limited to no internet</td>
+                  <td>Work never waits on the network; save state always visible</td>
+                  <td>Offline cache, queued sync</td>
+                </tr>
+                <tr>
+                  <td>Plans change mid-run</td>
+                  <td>Changing the plan can't be the error-prone path</td>
+                  <td>Scan-ID stepper, continuity checks</td>
+                </tr>
+                <tr>
+                  <td>Wrong tags corrupt models</td>
+                  <td>Tagging has to be hard to get wrong</td>
+                  <td>Run fields, run detail</td>
+                </tr>
+                <tr>
+                  <td>Safety steps before work</td>
+                  <td>A deliberate stop, not a dismissible banner</td>
+                  <td>Safety modal</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -261,15 +396,21 @@
             </div>
             <div class="sketches">
               <figure>
-                <a href="assets/case-study/opal-sketch-operator.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-sketch-operator.png" width="618" height="812" loading="lazy" alt="Pencil sketch of the operator view: customer, system and last-synced header; active run with open and cancel; tables for today's runs, future runs and completed runs."></a>
+                <a href="assets/case-study/opal-sketch-operator.png" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-sketch-operator.png" width="618" height="812" loading="lazy"
+                    alt="Pencil sketch of the operator view: customer, system and last-synced header; active run with open and cancel; tables for today's runs, future runs and completed runs."></a>
                 <figcaption><b>Operator</b> — active run on top, then today's, future and completed runs</figcaption>
               </figure>
               <figure>
-                <a href="assets/case-study/opal-sketch-material-library.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-sketch-material-library.png" width="618" height="812" loading="lazy" alt="Pencil sketch of the material library: tabs for backgrounds, materials, testing presets and training presets; search and filters; a list of materials with type, description and default presets."></a>
+                <a href="assets/case-study/opal-sketch-material-library.png" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-sketch-material-library.png" width="618" height="812" loading="lazy"
+                    alt="Pencil sketch of the material library: tabs for backgrounds, materials, testing presets and training presets; search and filters; a list of materials with type, description and default presets."></a>
                 <figcaption><b>Material library</b> — backgrounds, materials and presets, searchable</figcaption>
               </figure>
               <figure>
-                <a href="assets/case-study/opal-sketch-post-processing.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-sketch-post-processing.png" width="618" height="812" loading="lazy" alt="Pencil sketch of post-processing: customer, system and project selectors; a run table filtered by testing or training; an image viewer with load and auto-detect; and a manual detection panel."></a>
+                <a href="assets/case-study/opal-sketch-post-processing.png" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-sketch-post-processing.png" width="618" height="812" loading="lazy"
+                    alt="Pencil sketch of post-processing: customer, system and project selectors; a run table filtered by testing or training; an image viewer with load and auto-detect; and a manual detection panel."></a>
                 <figcaption><b>Post-processing</b> — run table, image viewer, manual detection</figcaption>
               </figure>
             </div>
@@ -282,103 +423,187 @@
             </div>
             <div class="wf-pair">
               <figure>
-                <a href="assets/case-study/opal-wireframe-operator-lowfi.svg" target="_blank" rel="noopener"><img src="assets/case-study/opal-wireframe-operator-lowfi.svg" width="1102" height="1370" loading="lazy" alt="Low-fi wireframe of the operator run screen: grey boxes for run details, scan-ID stepper, lanes, primary action and secondary buttons."></a>
+                <a href="assets/case-study/opal-wireframe-operator-lowfi.svg" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-wireframe-operator-lowfi.svg" width="1102" height="1370" loading="lazy"
+                    alt="Low-fi wireframe of the operator run screen: grey boxes for run details, scan-ID stepper, lanes, primary action and secondary buttons."></a>
                 <figcaption><b>Low-fi</b> — layout and hierarchy only</figcaption>
               </figure>
               <figure>
-                <a href="assets/case-study/opal-operator-run.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-operator-run.png" width="511" height="595" loading="lazy" alt="Hi-fi: the built OPAL operator run screen."></a>
+                <a href="assets/case-study/opal-operator-run.png" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-operator-run.png" width="511" height="595" loading="lazy"
+                    alt="Hi-fi: the built OPAL operator run screen."></a>
                 <figcaption><b>Hi-fi</b> — the built screen</figcaption>
               </figure>
             </div>
             <figure class="wf-wide">
-              <div class="figure__scroll"><a href="assets/case-study/opal-wireframe-operator-annotated.svg" target="_blank" rel="noopener"><img src="assets/case-study/opal-wireframe-operator-annotated.svg" width="1662" height="1370" loading="lazy" alt="Annotated wireframe of the operator run screen with seven design decisions: run context from the plan, scan-ID stepper, visible progress, large lane targets, one primary action, optional steps tucked away, and Complete Run disabled until the scans are done."></a></div>
+              <div class="figure__scroll"><a href="assets/case-study/opal-wireframe-operator-annotated.svg"
+                  target="_blank" rel="noopener"><img src="assets/case-study/opal-wireframe-operator-annotated.svg"
+                    width="1662" height="1370" loading="lazy"
+                    alt="Annotated wireframe of the operator run screen with seven design decisions: run context from the plan, scan-ID stepper, visible progress, large lane targets, one primary action, optional steps tucked away, and Complete Run disabled until the scans are done."></a>
+              </div>
               <figcaption><b>Annotated</b> — the seven decisions behind the operator screen</figcaption>
             </figure>
             <div class="wf-pair wf-pair--wide">
               <figure>
-                <a href="assets/case-study/opal-wireframe-planner-lowfi.svg" target="_blank" rel="noopener"><img src="assets/case-study/opal-wireframe-planner-lowfi.svg" width="1720" height="1240" loading="lazy" alt="Low-fi wireframe of the planner's Plan Runs screen: project and collection selectors, backgrounds, material additions, a material table and a generate-and-schedule panel."></a>
+                <a href="assets/case-study/opal-wireframe-planner-lowfi.svg" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-wireframe-planner-lowfi.svg" width="1720" height="1240" loading="lazy"
+                    alt="Low-fi wireframe of the planner's Plan Runs screen: project and collection selectors, backgrounds, material additions, a material table and a generate-and-schedule panel."></a>
                 <figcaption><b>Low-fi</b> — planner, Plan Runs</figcaption>
               </figure>
               <figure>
-                <a href="assets/case-study/opal-planner-plan-runs.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-planner-plan-runs.png" width="1600" height="1012" loading="lazy" alt="Hi-fi: the built OPAL planner Plan Runs screen."></a>
+                <a href="assets/case-study/opal-planner-plan-runs.png" target="_blank" rel="noopener"><img
+                    src="assets/case-study/opal-planner-plan-runs.png" width="1600" height="1012" loading="lazy"
+                    alt="Hi-fi: the built OPAL planner Plan Runs screen."></a>
                 <figcaption><b>Hi-fi</b> — the built screen</figcaption>
               </figure>
             </div>
-            <figcaption>Low-fi and annotated wireframes redrawn from the built screens. Click any image to open it full size.</figcaption>
+            <figcaption>Low-fi and annotated wireframes redrawn from the built screens. Click any image to open it full
+              size.</figcaption>
           </figure>
         </section>
 
         <!-- 06 -->
         <section class="panel section" id="testing" aria-labelledby="h-testing">
-          <div class="section__head"><span class="section__num">06</span><h2 id="h-testing">Usability testing &amp; outcomes</h2></div>
+          <div class="section__head"><span class="section__num">06</span>
+            <h2 id="h-testing">Usability testing &amp; outcomes</h2>
+          </div>
           <h3>How it was tested</h3>
-          <p>The planner and operator modules were tested several times during development by the most experienced members of the Data Services team, on our in-house system. Their feedback came back as shared documents: lists of rejects and suggestions, each marked by importance, which set the priorities for the next round.</p>
-          <p>Post-processing was tested by the developers, who ran it on data sets from earlier projects to confirm it was both usable and correct.</p>
+          <p>The planner and operator modules were tested several times during development by the most experienced
+            members of the Data Services team, on our in-house system. Their feedback came back as shared documents:
+            lists of rejects and suggestions, each marked by importance, which set the priorities for the next round.
+          </p>
+          <p>Post-processing was tested by the developers, who ran it on data sets from earlier projects to confirm it
+            was both usable and correct.</p>
           <h3>What changed</h3>
           <div class="grid-3">
-            <div class="tile"><h4>Planner · background in one click</h4><p>A background can now be applied to every run in the collection at once, instead of being set row by row.</p></div>
-            <div class="tile"><h4>Operator · two running timers</h4><p>The capture screen shows two timers: one for all the runs on the current background, and one for the capture in progress.</p></div>
-            <div class="tile"><h4>Operator · start and stop per scan</h4><p>Each scan now has its own start and stop. Before, a scan's stop time was taken from the start of the next scan, which blurred the time frame.</p></div>
+            <div class="tile">
+              <h4>Planner · background in one click</h4>
+              <p>A background can now be applied to every run in the collection at once, instead of being set row by
+                row.</p>
+            </div>
+            <div class="tile">
+              <h4>Operator · two running timers</h4>
+              <p>The capture screen shows two timers: one for all the runs on the current background, and one for the
+                capture in progress.</p>
+            </div>
+            <div class="tile">
+              <h4>Operator · start and stop per scan</h4>
+              <p>Each scan now has its own start and stop. Before, a scan's stop time was taken from the start of the
+                next scan, which blurred the time frame.</p>
+            </div>
           </div>
           <h3>Outcomes</h3>
           <ul class="stats">
-            <li><span class="stat__value">~25%</span><span class="stat__label">Less time at the customer site</span></li>
+            <li><span class="stat__value">~25%</span><span class="stat__label">Less time at the customer site</span>
+            </li>
             <li><span class="stat__value">~60%</span><span class="stat__label">Less post-processing time</span></li>
           </ul>
           <ul style="margin-top:1.25rem">
             <li>Data stays inside the organisation, on its own platform.</li>
-            <li>Every on-site session is logged and documented, so recurring errors can be spotted and fixed. Error reduction is real but not yet measured — the log is what makes it measurable.</li>
+            <li>Every on-site session is logged and documented, so recurring errors can be spotted and fixed. Error
+              reduction is real but not yet measured — the log is what makes it measurable.</li>
           </ul>
         </section>
 
         <!-- 07 -->
         <section class="panel section" id="solution" aria-labelledby="h-solution">
-          <div class="section__head"><span class="section__num">07</span><h2 id="h-solution">Final solution &amp; design brief</h2></div>
+          <div class="section__head"><span class="section__num">07</span>
+            <h2 id="h-solution">Final solution &amp; design brief</h2>
+          </div>
           <div class="key-screens">
             <figure>
-              <a href="assets/case-study/opal-planner-plan-runs.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-planner-plan-runs.png" width="1600" height="1012" loading="lazy" alt="OPAL planner Plan Runs screen with project and collection selectors, material rows with size chips, and a Generate Runs panel showing 3 estimated runs."></a>
-              <figcaption><b>Planner · Plan Runs.</b> Add the standard materials in one click, then per-project rows and sizes. The run count is estimated before anything is generated.</figcaption>
+              <a href="assets/case-study/opal-planner-plan-runs.png" target="_blank" rel="noopener"><img
+                  src="assets/case-study/opal-planner-plan-runs.png" width="1600" height="1012" loading="lazy"
+                  alt="OPAL planner Plan Runs screen with project and collection selectors, material rows with size chips, and a Generate Runs panel showing 3 estimated runs."></a>
+              <figcaption><b>Planner · Plan Runs.</b> Add the standard materials in one click, then per-project rows and
+                sizes. The run count is estimated before anything is generated.</figcaption>
             </figure>
             <figure>
-              <a href="assets/case-study/opal-operator-wide.png" target="_blank" rel="noopener"><img src="assets/case-study/opal-operator-wide.png" width="1162" height="673" loading="lazy" alt="OPAL operator view: the run dialog open over the day's run list, with the active run and queued runs behind it."></a>
-              <figcaption><b>Operator · run screen.</b> One run at a time, over the day's list: context on top, lanes in the middle, one primary action.</figcaption>
+              <a href="assets/case-study/opal-operator-wide.png" target="_blank" rel="noopener"><img
+                  src="assets/case-study/opal-operator-wide.png" width="1162" height="673" loading="lazy"
+                  alt="OPAL operator view: the run dialog open over the day's run list, with the active run and queued runs behind it."></a>
+              <figcaption><b>Operator · run screen.</b> One run at a time, over the day's list: context on top, lanes in
+                the middle, one primary action.</figcaption>
             </figure>
           </div>
           <figure class="key-screens__missing">
-            <div class="placeholder-media">Post-processing view · Proprietary information — this screen could not be published</div>
+            <div class="placeholder-media">Post-processing view · Proprietary information — this screen could not be
+              published</div>
           </figure>
 
           <h3>Design brief</h3>
           <div class="grid-2">
-            <div class="tile"><h4>Goals &amp; audience</h4><p>One platform for planning, collecting and post-processing training data. Used internally by Data Services (planners and field operators) and Data Modelling.</p></div>
-            <div class="tile"><h4>Layout</h4><p>A separate view per role, so each person sees only their own job.</p></div>
-            <div class="tile"><h4>Typography</h4><p>The SvelteKit default: a plain sans-serif. Small uppercase labels over bold values let the operator tell a label from its value at a glance, at arm's length.</p></div>
-            <div class="tile"><h4>Colour</h4><p>OPAL kept SvelteKit's default light theme, so the time went into the workflow instead of a visual identity for an internal tool. It suits the floor: light neutral surfaces and near-black text hold up in bright light, and a single amber accent marks the primary action and the current selection, so the next step is always the most visible thing on screen. Dark mode was on the to-do list but wasn't required, and wasn't built before I left.</p></div>
-            <div class="tile"><h4>Accessibility</h4><p>Large, full-width buttons and lane targets for gloved hands; a label on every field; the online and sync state shown at the top of the operator view; and disabled actions, like Complete Run, that prevent errors instead of reporting them.</p></div>
-            <div class="tile"><h4>Key lesson</h4><p>Validate the design with everyone it belongs to before writing code.</p></div>
+            <div class="tile">
+              <h4>Goals &amp; audience</h4>
+              <p>One platform for planning, collecting and post-processing training data. Used internally by Data
+                Services (planners and field operators) and Data Modelling.</p>
+            </div>
+            <div class="tile">
+              <h4>Layout</h4>
+              <p>A separate view per role, so each person sees only their own job.</p>
+            </div>
+            <div class="tile">
+              <h4>Typography</h4>
+              <p>The SvelteKit default: a plain sans-serif. Small uppercase labels over bold values let the operator
+                tell a label from its value at a glance, at arm's length.</p>
+            </div>
+            <div class="tile">
+              <h4>Colour</h4>
+              <p>OPAL kept SvelteKit's default light theme, so the time went into the workflow instead of a visual
+                identity for an internal tool. It suits the floor: light neutral surfaces and near-black text hold up in
+                bright light, and a single amber accent marks the primary action and the current selection, so the next
+                step is always the most visible thing on screen. Dark mode was on the to-do list but wasn't required,
+                and wasn't built before I left.</p>
+            </div>
+            <div class="tile">
+              <h4>Accessibility</h4>
+              <p>Large, full-width buttons and lane targets for gloved hands; a label on every field; the online and
+                sync state shown at the top of the operator view; and disabled actions, like Complete Run, that prevent
+                errors instead of reporting them.</p>
+            </div>
+            <div class="tile">
+              <h4>Key lesson</h4>
+              <p>Validate the design with everyone it belongs to before writing code.</p>
+            </div>
           </div>
         </section>
 
         <!-- 08 -->
         <section class="panel section" id="development" aria-labelledby="h-development">
-          <div class="section__head"><span class="section__num">08</span><h2 id="h-development">Development</h2></div>
-          <p>Svelte PWA, Hono API, PostgreSQL on AWS. I built the cloud and deployment infrastructure and drove the planner and operator modules.</p>
+          <div class="section__head"><span class="section__num">08</span>
+            <h2 id="h-development">Development</h2>
+          </div>
+          <p>Svelte PWA, Hono API, PostgreSQL on AWS. I built the cloud and deployment infrastructure and drove the
+            planner and operator modules.</p>
           <h3>Key challenge: keeping data consistent offline and online</h3>
-          <p>Operators work for hours with no connection, and the plan can change mid-run. Every action on the tablet — safety check, scan record, plan edit, run completion — is written to a queue on the device first, so nothing waits on the network. When the connection returns, the queue replays in order. Getting that right meant solving three problems:</p>
+          <p>Operators work for hours with no connection, and the plan can change mid-run. Every action on the tablet —
+            safety check, scan record, plan edit, run completion — is written to a queue on the device first, so nothing
+            waits on the network. When the connection returns, the queue replays in order. Getting that right meant
+            solving three problems:</p>
           <ol class="steps">
-            <li><strong>No duplicates.</strong> A connection can drop after the server saved a record but before the tablet heard back. Each queued write carries a deterministic key; the API returns the existing record instead of creating a second one.</li>
-            <li><strong>One replayer at a time.</strong> The page and the service worker can both try to drain the queue. A lease stored on the device, plus a handshake between the two, lets only one replay.</li>
-            <li><strong>Tell the operator, don't retry forever.</strong> Temporary failures back off and retry. An item that can never apply is marked blocked and shown to the operator.</li>
+            <li><strong>No duplicates.</strong> A connection can drop after the server saved a record but before the
+              tablet heard back. Each queued write carries a deterministic key; the API returns the existing record
+              instead of creating a second one.</li>
+            <li><strong>One replayer at a time.</strong> The page and the service worker can both try to drain the
+              queue. A lease stored on the device, plus a handshake between the two, lets only one replay.</li>
+            <li><strong>Tell the operator, don't retry forever.</strong> Temporary failures back off and retry. An item
+              that can never apply is marked blocked and shown to the operator.</li>
           </ol>
-          <p style="margin-top:1rem">Before going on site, OPAL checks that the cached plan is fresh enough to work from offline.</p>
-          <p><a class="link-arrow" href="assets/case-study/opal-offline-sync.svg" target="_blank" rel="noopener">See the offline sync sequence diagram →<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+          <p style="margin-top:1rem">Before going on site, OPAL checks that the cached plan is fresh enough to work from
+            offline.</p>
+          <p><a class="link-arrow" href="assets/case-study/opal-offline-sync.svg" target="_blank" rel="noopener">See the
+              offline sync sequence diagram →<span class="visually-hidden"> (opens in a new tab)</span></a></p>
         </section>
 
         <!-- 09 -->
         <section class="panel section" id="reflection" aria-labelledby="h-reflection">
-          <div class="section__head"><span class="section__num">09</span><h2 id="h-reflection">Reflection &amp; lesson learned</h2></div>
+          <div class="section__head"><span class="section__num">09</span>
+            <h2 id="h-reflection">Reflection &amp; lesson learned</h2>
+          </div>
           <p class="pull">Before OPAL, I built the wrong thing for weeks.</p>
-          <p>On Insights I built a data-retention feature from a vague ticket. After weeks of development, testing and deployment, I found that customer success had wanted something else from the start. On OPAL I began the other way round: spreadsheets, documentation, then interviews — before any code.</p>
+          <p>On Insights I built a data-retention feature from a vague ticket. After weeks of development, testing and
+            deployment, I found that customer success had wanted something else from the start. On OPAL I began the
+            other way round: spreadsheets, documentation, then interviews — before any code.</p>
           <p><strong>Lesson:</strong> validate the design with everyone it belongs to before writing code.</p>
         </section>
 
@@ -395,9 +620,10 @@
 
   <footer class="site-footer">
     <span>© 2026 Daniel Peleg</span>
-    <span>Hand-coded HTML/CSS · INFO-3130</span>
+    <span>HTML/CSS</span>
   </footer>
 
   <script src="js/main.js" defer></script>
 </body>
+
 </html>
