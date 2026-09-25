@@ -28,6 +28,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Structured data so search engines know who the site is about -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,10 +45,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Two-column bento layout on wide screens, a single column on phones -->
   <div class="home">
     <!-- ============ Left rail: identity + contact ============ -->
     <div class="home__rail">
       <header class="panel identity">
+        <!-- Small nav inside the identity panel, since the home page has no top bar -->
         <nav class="mini-nav" aria-label="Primary">
           <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
@@ -56,6 +59,7 @@
           </ul>
         </nav>
 
+        <!-- Logo, name and positioning line: the first thing a recruiter reads -->
         <div class="identity__logo">
           <img src="assets/img/logo.png" width="480" height="280" alt="DP monogram logo">
         </div>
@@ -71,6 +75,7 @@
         <p class="status">Waterloo, Ontario · open to 2027 roles</p>
       </header>
 
+      <!-- Contact sits right under the identity, so it is never more than a scroll away -->
       <section class="panel contact" id="contact" aria-labelledby="contact-title">
         <h2 class="label" id="contact-title">Contact</h2>
         <a class="btn btn--primary btn--block" href="mailto:dpeleg2000@gmail.com">dpeleg2000@gmail.com</a>
@@ -84,6 +89,7 @@
 
     <!-- ============ Main: projects, case study, stack ============ -->
     <main class="home__main" id="main">
+      <!-- Work projects first: OPAL and Insights, each opens its own popup -->
       <section class="panel" id="work" aria-labelledby="work-title">
         <div class="panel__head">
           <h2 class="label" id="work-title">Work projects</h2>
@@ -113,6 +119,7 @@
         </div>
       </section>
 
+      <!-- Side projects: smaller cards in a grid, same popup pattern -->
       <section class="panel" aria-labelledby="side-title">
         <h2 class="label" id="side-title">Side projects</h2>
         <div class="cards cards--grid">
@@ -143,6 +150,7 @@
                 →<span class="visually-hidden"> about Portfollr</span></button>
             </div>
           </article>
+          <!-- Dashed "more" card pointing to GitHub instead of a popup -->
           <article class="card card--more">
             <h3>More on GitHub</h3>
             <p>Course work and smaller tools.</p>
@@ -155,6 +163,7 @@
         </div>
       </section>
 
+      <!-- Featured case study with the two headline numbers -->
       <section class="panel panel--raised feature" aria-labelledby="feature-title">
         <div>
           <p class="label"><span class="label--amber">Case study</span><span class="sep">·</span>OPAL · P&amp;P Optica
@@ -176,6 +185,7 @@
         </div>
       </section>
 
+      <!-- Tech stack grouped by area, plain lists so screen readers read them as lists -->
       <section class="panel stack-panel" aria-labelledby="stack-title">
         <h2 class="label" id="stack-title">Stack &amp; tools</h2>
         <div class="stack">
@@ -231,6 +241,7 @@
     </main>
   </div>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <span>© 2026 Daniel Peleg</span>
     <span> HTML/CSS</span>
@@ -238,6 +249,7 @@
 
   <!-- ================= Project dialogs ================= -->
 
+  <!-- Each popup is a native <dialog>: Esc, the close button or a backdrop click closes it (see main.js) -->
   <dialog class="project-dialog" id="project-opal" aria-labelledby="opal-title">
     <div class="dialog__inner">
       <div class="dialog__head">
@@ -251,6 +263,7 @@
         </button>
       </div>
       <div class="dialog__body">
+        <!-- Screenshot gallery: thumbnails swap the big image, no carousel -->
         <div class="gallery" data-gallery>
           <div class="gallery__main">
             <img src="assets/case-study/opal-operator-wide.png" width="1162" height="673"
@@ -298,6 +311,7 @@
             </div>
           </dl>
           <p class="label">Highlights</p>
+          <!-- Three short highlights, the rest lives in the case study -->
           <ul class="highlights">
             <li>~25% less time at the customer site</li>
             <li>~60% less post-processing time</li>
@@ -305,6 +319,7 @@
           </ul>
         </div>
       </div>
+      <!-- Footer actions: case study link for OPAL, GitHub for open-source projects -->
       <div class="dialog__foot">
         <small>Internal tool · screens show test data only</small>
         <div class="dialog__actions">
@@ -329,6 +344,7 @@
       </div>
       <div class="dialog__body">
         <div>
+          <!-- No screenshots allowed for Insights, so a clear placeholder instead of a blank -->
           <div class="placeholder-media">Proprietary information — this screen could not be published</div>
         </div>
         <div class="dialog__info">
@@ -517,6 +533,7 @@
     </div>
   </dialog>
 
+  <!-- One small script, loaded last; everything still works without it -->
   <script src="js/main.js" defer></script>
 </body>
 

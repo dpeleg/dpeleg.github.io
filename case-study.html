@@ -41,9 +41,11 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Sticky top bar with a reading-progress line underneath -->
   <div class="topbar-wrap">
     <header class="panel topbar">
       <a class="brand" href="index.html">
+        <!-- Empty alt on purpose: the name next to it already labels the link, so screen readers don't say it twice -->
         <img src="assets/img/logo-sm.png" width="240" height="140" alt="">
         <span>Daniel Peleg</span>
       </a>
@@ -56,6 +58,7 @@
         </ul>
       </nav>
     </header>
+    <!-- Filled by main.js as you scroll; hidden from screen readers -->
     <div class="progress" aria-hidden="true"><span></span></div>
   </div>
 
@@ -96,6 +99,7 @@
     <div class="cs-body">
       <!-- ============ Sticky rail ============ -->
       <aside class="cs-rail" aria-label="Case study navigation">
+        <!-- Contents list, collapsible on phones; main.js highlights the section in view -->
         <details class="panel toc" open>
           <summary><span class="label">On this page</span></summary>
           <nav aria-label="Sections">
@@ -112,6 +116,7 @@
             </ol>
           </nav>
         </details>
+        <!-- Quick jump list to the four labelled artifacts -->
         <div class="panel panel--raised artifact-index">
           <p class="artifact-label">UX artifacts</p>
           <ul>
@@ -127,7 +132,7 @@
       <!-- ============ Sections ============ -->
       <main class="cs-main" id="main">
 
-        <!-- 01 -->
+        <!-- 01 · Project overview -->
         <section class="panel section" id="overview" aria-labelledby="h-overview">
           <div class="section__head"><span class="section__num">01</span>
             <h2 id="h-overview">Project overview</h2>
@@ -146,13 +151,14 @@
           </ul>
         </section>
 
-        <!-- 02 -->
+        <!-- 02 · User research & discovery -->
         <section class="panel section" id="research" aria-labelledby="h-research">
           <div class="section__head"><span class="section__num">02</span>
             <h2 id="h-research">User research &amp; discovery</h2>
           </div>
 
           <h3>How the old workflow ran</h3>
+          <!-- Three research findings as tiles -->
           <div class="grid-3">
             <div class="tile">
               <h4>1 · Planning</h4>
@@ -204,6 +210,7 @@
               <a class="figure__open" href="assets/case-study/opal-personas.svg" target="_blank" rel="noopener">Open
                 full size<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
+            <!-- Wide diagrams scroll sideways on small screens instead of shrinking to unreadable -->
             <div class="figure__scroll">
               <img src="assets/case-study/opal-personas.svg" width="1704" height="1057" loading="lazy"
                 alt="Three composite personas. The planner (Data Services, office), the field operator (Data Services, customer site) and the data modeller (Data Modelling), each with context, goals, frustrations with the spreadsheet, and what OPAL has to give them.">
@@ -213,7 +220,7 @@
           </figure>
         </section>
 
-        <!-- 03 -->
+        <!-- 03 · Problem statement -->
         <section class="panel section" id="problem" aria-labelledby="h-problem">
           <div class="section__head"><span class="section__num">03</span>
             <h2 id="h-problem">Problem statement</h2>
@@ -233,7 +240,7 @@
           </dl>
         </section>
 
-        <!-- 04 -->
+        <!-- 04 · Ideation -->
         <section class="panel section" id="ideation" aria-labelledby="h-ideation">
           <div class="section__head"><span class="section__num">04</span>
             <h2 id="h-ideation">Ideation</h2>
@@ -241,6 +248,7 @@
           <p>I organised the findings around five design questions, keeping the rejected options visible next to the
             ones we chose.</p>
 
+          <!-- Tables are wrapped so they can scroll sideways on phones -->
           <div class="table-wrap">
             <table>
               <thead>
@@ -339,7 +347,7 @@
           </figure>
         </section>
 
-        <!-- 05 -->
+        <!-- 05 · Prototyping -->
         <section class="panel section" id="prototyping" aria-labelledby="h-prototyping">
           <div class="section__head"><span class="section__num">05</span>
             <h2 id="h-prototyping">Prototyping</h2>
@@ -394,6 +402,7 @@
               <span class="artifact-label">Artifact 3 — Sketches</span>
               <span class="label" style="margin:0">Operator · Material library · Post-processing</span>
             </div>
+            <!-- Pencil sketches, click to open full size -->
             <div class="sketches">
               <figure>
                 <a href="assets/case-study/opal-sketch-operator.png" target="_blank" rel="noopener"><img
@@ -421,6 +430,7 @@
               <span class="artifact-label">Artifact 4 — Wireframes</span>
               <span class="label" style="margin:0">Operator run screen · Planner · Material library</span>
             </div>
+            <!-- Each wireframe sits next to the built screen, low-fi on the left -->
             <div class="wf-pair">
               <figure>
                 <a href="assets/case-study/opal-wireframe-operator-lowfi.svg" target="_blank" rel="noopener"><img
@@ -476,7 +486,7 @@
           </figure>
         </section>
 
-        <!-- 06 -->
+        <!-- 06 · Usability testing & outcomes -->
         <section class="panel section" id="testing" aria-labelledby="h-testing">
           <div class="section__head"><span class="section__num">06</span>
             <h2 id="h-testing">Usability testing &amp; outcomes</h2>
@@ -519,11 +529,12 @@
           </ul>
         </section>
 
-        <!-- 07 -->
+        <!-- 07 · Final solution & design brief -->
         <section class="panel section" id="solution" aria-labelledby="h-solution">
           <div class="section__head"><span class="section__num">07</span>
             <h2 id="h-solution">Final solution &amp; design brief</h2>
           </div>
+          <!-- Built screens from the test data; post-processing could not be published -->
           <div class="key-screens">
             <figure>
               <a href="assets/case-study/opal-planner-plan-runs.png" target="_blank" rel="noopener"><img
@@ -546,6 +557,7 @@
           </figure>
 
           <h3>Design brief</h3>
+          <!-- Design brief as tiles, one decision each -->
           <div class="grid-2">
             <div class="tile">
               <h4>Goals &amp; audience</h4>
@@ -582,7 +594,7 @@
           </div>
         </section>
 
-        <!-- 08 -->
+        <!-- 08 · Development -->
         <section class="panel section" id="development" aria-labelledby="h-development">
           <div class="section__head"><span class="section__num">08</span>
             <h2 id="h-development">Development</h2>
@@ -609,7 +621,7 @@
               offline sync sequence diagram →<span class="visually-hidden"> (opens in a new tab)</span></a></p>
         </section>
 
-        <!-- 09 -->
+        <!-- 09 · Reflection -->
         <section class="panel section" id="reflection" aria-labelledby="h-reflection">
           <div class="section__head"><span class="section__num">09</span>
             <h2 id="h-reflection">Reflection &amp; lesson learned</h2>
