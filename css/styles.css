@@ -368,10 +368,11 @@ td:first-child { color: var(--text); }
 .steps li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 1.1rem; top: 1rem; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--text-mute); }
 .steps li + li { margin-top: 0; }
 
-.pull { font-size: var(--fs-lg); line-height: 1.3; font-weight: 700; color: var(--text); max-width: 30ch; margin-bottom: 1rem; }
+.pull { margin-top: 0; font-size: var(--fs-lg); line-height: 1.3; font-weight: 700; color: var(--text); max-width: 30ch; margin-bottom: 1rem; }
 
 .cs-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-.cs-foot p { margin: 0; font-size: var(--fs-md); font-weight: 700; }
+.cs-foot p { margin: 0; }
+.cs-foot h2 { margin: 0; font-size: var(--fs-md); }
 
 @media (min-width: 700px) {
   .topbar-wrap, .cs { padding-left: 1.5rem; padding-right: 1.5rem; }
