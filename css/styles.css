@@ -17,7 +17,7 @@
   /* text */
   --text: #EDEFEE;       /* 15.31:1 on panel */
   --text-2: #AEB8B6;     /*  8.70:1 on panel */
-  --text-mute: #828C8A;  /*  5.11:1 on panel — labels and metadata only */
+  --text-mute: #94A09D;  /*  6.55:1 on panel, 5.73:1 on raised — labels and metadata only */
 
   /* accents — teal = interactive, amber = artifacts / evidence */
   --teal: #2DD4BF;
@@ -195,7 +195,7 @@ button { font: inherit; color: inherit; }
 }
 .identity__name { font-size: var(--fs-lg); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; color: var(--text); margin: 0 0 .3rem; }
 .identity__logo img { width: 128px; border-radius: 6px; }
-.identity h1 { font-size: var(--fs-xl); line-height: 1.14; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
+.identity h2 { font-size: var(--fs-xl); line-height: 1.14; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
 .identity__lead { color: var(--text); }
 .identity__bg { color: var(--text-2); }
 .status { display: flex; align-items: center; gap: .6rem; margin-top: auto; padding-top: 1.25rem; font-size: var(--fs-sm); color: var(--text-2); }
