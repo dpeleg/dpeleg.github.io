@@ -103,7 +103,6 @@ button { font: inherit; color: inherit; }
   margin: 0 0 0.75rem;
 }
 .label--amber { color: var(--amber); }
-.label .sep { opacity: 0.6; margin: 0 0.4em; }
 
 /* amber artifact label — signals a labelled UX artifact */
 .artifact-label {
